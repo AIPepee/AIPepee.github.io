@@ -1,0 +1,621 @@
+/* Large desktop styles (1920x1080) */
+@media screen and (max-width: 2559px) {
+    body {
+        /* Adjust your styles for large desktop screens */
+    }
+
+    .bsc-powered {
+        right: -15px;
+    }
+
+    .bsc-heartbeat img {
+        width: 34px;
+    }
+}
+
+
+@media only screen and (min-width: 1181px) and (max-width: 1919px) {
+    .bsc-powered {
+        width: 12%;
+        top: calc(50% - 60px);
+    }
+
+    section {
+        max-width: 1180px;
+    }
+
+    .steps-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 20px; /* Add padding */
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Change from center to flex-start */
+        flex-basis: calc(33.333% - 10px); /* Adjust the width */
+        margin-bottom: 4em;
+    }
+
+    .step-content {
+        align-items: flex-start; /* Add this property */
+        display: flex;
+        flex-direction: column;
+        height: 14em;
+    }
+
+    #nav-links ul li {
+        margin-right: 2.5rem;
+    }
+
+    #community a {
+        margin-right: 2em;
+    }
+
+    img.communityLinkImage {
+        width: 8%;
+    }
+
+    .contract-address-box {
+        top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-links {
+        display: block;
+    }
+
+        #nav-links ul {
+        }
+
+            #nav-links ul li {
+                font-size: 1.4em;
+                margin-right: 1.3em;
+            }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .contract-address-box {
+        right: 1rem;
+        top: 20px;
+    }
+
+    .container, .wrapper {
+        width: 100%;
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bsc-powered {
+        width: 14%;
+        right: -15px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .spikeHeader {
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+        .spikeHeader blockquote {
+            width: 45%;
+            text-align: left;
+            margin-left: 1%; /* Add a small left margin */
+        }
+
+        .spikeHeader div {
+            top: -1em;
+            border-radius: 140px 300px;
+            margin-left: -20px;
+        }
+
+        .spikeHeader blockquote {
+            width: fit-content;
+            margin-left: 0%;
+        }
+
+    section {
+        max-width: 1180px;
+    }
+
+    .steps-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 20px; /* Add padding */
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Change from center to flex-start */
+        flex-basis: calc(33.333% - 10px); /* Adjust the width */
+        margin-bottom: 4em;
+    }
+
+    .step-content {
+        align-items: flex-start; /* Add this property */
+        display: flex;
+        flex-direction: column;
+        height: 14em;
+    }
+
+    .steps-container .step-image,
+    .steps-container .pepe-image {
+        /* Adjust the width and height as needed */
+        width: 300px;
+        height: auto;
+    }
+
+    .step4 img, .step5 img {
+        transform: translate(0%, -15%);
+    }
+
+    .steps-container .step:last-child {
+        margin-bottom: 15rem;
+    }
+
+    #community a {
+        margin-right: 1em;
+    }
+
+    img.communityLinkImage {
+        width: 9%;
+        margin-left: 10px; /* Adjust the value as needed */
+        margin-right: 10px; /* Adjust the value as needed */
+    }
+
+    .speech-bubble-right::after {
+        left: 25em;
+    }
+
+    .step4 img, .step5 img {
+        width: inherit;
+        height: inherit;
+        transform: none;
+    }
+
+    .steps-container .step:last-child {
+        margin-bottom: 0rem;
+    }
+}
+
+/* Small tablet styles (768x1024) */
+@media screen and (max-width: 1023px) {
+    .bsc-powered {
+        width: 20%;
+        top: 25%;
+    }
+
+    .spikeHeader {
+        margin-top: 7rem;
+    }
+
+        .spikeHeader div {
+            top: 1em;
+        }
+
+    .hamburger-menu {
+        display: flex;
+        position: fixed;
+        color: white;
+        top: 5%;
+        left: 5%;
+        height: 30px;
+        width: 108px;
+        z-index: 10000;
+    }
+
+    .hamburger-line {
+        background-color: #fff; /* Changed to white */
+        height: 3px;
+        width: 25px;
+        border-radius: 5px;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+        #nav-links.mobile-nav {
+            position: fixed;
+            z-index: 7777;
+            top: calc(38% + 30px);
+            border-radius: 15px;
+            border-style: double;
+            border-color: var(--accent-color);
+            line-height: 4em;
+            transform: translateY(-100%); /* Add this line to hide the menu by default */
+            transition: transform 0.3s ease;
+        }
+
+            #nav-links.mobile-nav a {
+                color: #333;
+                text-decoration: none;
+                padding: 0.5em; /* Added padding to make the nav-links more compact */
+                white-space: nowrap; /* Prevents the text from wrapping to the next line */
+            }
+
+    .steps-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column; /* Changed to column */
+        flex-wrap: nowrap; /* Changed to nowrap */
+        padding: 0 20px;
+    }
+
+    .step-content {
+        height: 7em;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%; /* Changed to 100% */
+        margin-bottom: 4em;
+    }
+
+    .steps-container .step-image, .steps-container .pepe-image {
+        width: 350px;
+    }
+
+    .step4 img, .step5 img {
+        width: inherit;
+        height: inherit;
+        transform: none;
+    }
+
+    .steps-container .step:last-child {
+        margin-bottom: 0;
+    }
+
+    .spikeHeader blockquote {
+        width: revert;
+        margin-left: 5%;
+    }
+
+    .infoBox .close-btn {
+        top: 30px;
+    }
+
+    #nav-links {
+        margin-top: 3em;
+    }
+}
+
+/* Large mobile styles (480x320) */
+@media screen and (max-width: 767px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+    }
+
+    h2 {
+        margin: 7px;
+    }
+
+    section {
+        margin-bottom: 0rem;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        color: var(--accent-color-1);
+    }
+
+
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .step-content {
+        margin-right: 0;
+        height: auto;
+    }
+
+    .step-image,
+    .pepe-image {
+        width: 100%;
+    }
+
+    #logoImage {
+        height: 20%;
+        width: auto;
+    }
+
+    nav .logo a {
+        font-size: 2em;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logoImage {
+        width: 100px; /* Adjust the width as needed */
+        height: auto;
+        margin-bottom: 10px; /* Adjust the space between the image and the text */
+    }
+
+    #headType {
+        font-family: var(--peppe-font);
+        font-size: 2.6em;
+    }
+
+    .bsc-powered {
+        position: fixed;
+        top: 9%;
+        right: 0em;
+        z-index: 9992343;
+        width: 23%;
+        border-radius: 20px 80px 80px 60px;
+    }
+
+    .bsc-powered-container {
+        padding: 5px;
+        border-radius: 10px 85px 85px 63px;
+        transition: none;
+    }
+
+    .bsc-heartbeat img {
+        width: 30px; /* Adjust the image width as needed */
+    }
+
+    .bsc-powered-text {
+        font-size: 0.8rem; /* Adjust the font size as needed */
+        margin-left: 5px;
+    }
+
+    .buyText {
+        font-size: 0.6rem; /* Adjust the font size as needed */
+    }
+
+    .spikeHeader div {
+        top: 7%;
+        margin-left: -20px;
+        border-radius: 3em 4em;
+    }
+
+    .spikeHeader p {
+        font-size: 15px;
+    }
+
+    img.communityLinkImage {
+        width: 30%;
+        height: auto;
+        margin: 10px;
+    }
+
+    #community {
+        /* display: flex;
+        flex-direction: column;*/
+        align-items: center;
+    }
+
+        #community a {
+            margin-right: 0;
+        }
+
+    blockquote p {
+        font-size: 15px;
+    }
+
+    .speech-bubble-right {
+        margin-left: 10px;
+        border-radius: 150px 50px;
+    }
+
+        .speech-bubble-right::after {
+            left: 10em;
+        }
+
+    .infoBox {
+        width: 100%;
+        font-size: 6px;
+        padding: 18px;
+        margin-bottom: 2em;
+    }
+
+    .infoBox-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .infoBox p {
+        font-size: 2em;
+    }
+
+    .infoBox-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .infoBox-button {
+        flex-shrink: 0;
+    }
+
+    .infoBox .close-btn {
+        position: sticky;
+    }
+
+    .contract-address-box {
+        position: inherit;
+        margin-top: 23px;
+    }
+
+    .image-container {
+        width: 100%; /* Set the width of the container */
+        height: 18em; /* Set the height of the container */
+        overflow: hidden; /* Hide the parts of the image that exceed the container dimensions */
+        position: relative; /* Set the position property to relative */
+    }
+
+        .image-container img {
+            width: 500px;
+            height: auto;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    #aipbuy {
+        left: 55%;
+    }
+
+    #marsHodl {
+        width: 22rem;
+    }
+
+    #allWallets {
+        width: 300px;
+    }
+
+    .quote-box {
+        width: 55%;
+        background: var(--primary-color);
+    }
+
+        .quote-box p {
+            font-size: 2rem;
+        }
+
+    .quote-part.two {
+        display: revert;
+    }
+
+    .footer {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #nav-links.mobile-nav {
+        display: flex;
+        margin-top: 25em;
+        margin-left: -1em;
+        width: 348px;
+    }
+
+    #nav-links.mobile-nav {
+        line-height: 7em;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    h2 {
+        margin: 15px;
+    }
+
+    .info-section {
+        max-width: 355px;
+    }
+
+    .contract-address-box {
+        width: 90%;
+    }
+
+    .chart-container {
+        width: 94%;
+    }
+
+    .info-section {
+        max-width: 347px;
+        font-size: 1.6em;
+    }
+
+    .degen-calling-container p {
+        font-size: 0.8em;
+    }
+
+
+    .spikeHeader blockquote {
+        width: min-content;
+        margin-left: 15%;
+    }
+
+    .spikeHeader p {
+        font-size: 16px;
+    }
+
+    .chart-container {
+        width: 86%;
+    }
+
+    section {
+        max-width: 350px;
+        margin-left: 20px;
+    }
+
+    .scroll-to-top {
+        bottom: 120px;
+        right: 45px;
+    }
+
+    .infoBox-content {
+        margin-left: -3px;
+    }
+
+    .infoBox-button {
+        margin-right: 13px;
+    }
+
+    .speech-bubble-right::after {
+        left: 8.9em;
+    }
+
+    .container .pepe-image {
+        margin-right: 25px;
+    }
+}
