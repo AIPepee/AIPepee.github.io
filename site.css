@@ -1,4 +1,4 @@
-﻿/* Background color palette */
+/* Background color palette */
 :root {
     --primary-color: #1E1E1E;
     --secondary-color: #222222;
@@ -1251,4 +1251,8 @@ section {
 #marsHodl {
     height: 400px;
     width: 400px;
+}
+
+#lockedLiquidity {
+    text-align: center;
 }
