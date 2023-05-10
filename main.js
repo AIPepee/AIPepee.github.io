@@ -115,80 +115,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // Chart.js data
-    const data = {
-        labels: ['Locked Liquidity', 'Exchanges'],
-        datasets: [{
-            label: 'Token Distribution',
-            data: [93, 7],
-            backgroundColor: [
-                'rgba(75, 192, 192, 0.5)',
-                'rgba(255, 99, 132, 0.5)',
-            ],
-            borderColor: [
-                'rgba(75, 192, 192, 1)',
-                'rgba(255, 99, 132, 1)',
-            ],
-            borderWidth: 1,
-        }]
-    };
-
-    // Chart.js options
-    //const options = {
-    //    maintainAspectRatio: false,
-    //    responsive: true,
-    //    plugins: {
-    //        legend: {
-    //            display: false
-    //        },
-    //        tooltip: {
-    //            callbacks: {
-    //                label: (context) => {
-    //                    const label = context.dataset.label || '';
-    //                    if (label) {
-    //                        return label + ': ' + context.formattedValue;
-    //                    } else {
-    //                        return context.formattedValue;
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    },
-    //    scales: {
-    //        x: {
-    //            grid: {
-    //                display: false,
-    //                drawBorder: false
-    //            },
-    //            ticks: {
-    //                color: '#fff'
-    //            }
-    //        },
-    //        y: {
-    //            grid: {
-    //                display: false,
-    //                drawBorder: false
-    //            },
-    //            ticks: {
-    //                color: '#fff',
-    //                callback: (value) => {
-    //                    if (value >= 1000000) {
-    //                        return (value / 1000000) + 'M';
-    //                    } else if (value >= 1000) {
-    //                        return (value / 1000) + 'K';
-    //                    } else {
-    //                        return value;
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
-    //};
-
-
-    // Data
+    // Chart data
     const chartdata = {
-        labels: ['85% Locked Liquidity', '7% Exchanges'],
+        labels: ['93% Locked liquidity pool', '7% Exchanges'],
         datasets: [
             {
                 data: [93, 7], // <-- Change the percentages here
