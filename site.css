@@ -537,7 +537,7 @@ nav ul {
     }
 
 .quote-box {
-    width: 24%;
+    width: 33%;
     padding: 3rem;
     display: inline-block;
     position: relative;
@@ -579,7 +579,6 @@ nav ul {
     }
 
     .quote-part.two {
-        text-indent: 4em;
         display: inline-block;
         animation: fadeIn 5s ease-in-out forwards;
         animation-delay: 1s;
