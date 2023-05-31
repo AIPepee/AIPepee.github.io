@@ -11,6 +11,10 @@
     .bsc-heartbeat img {
         width: 34px;
     }
+    
+    .steps-container {
+        gap: 35px;
+    }
 }
 
 
